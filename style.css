@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Patrick+Hand&family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    position:sticky;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: -10px 10px;
+    text-decoration: none;
+    font-family: 'Patrick Hand', cursive;
+    color:white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    /*right: -1050px;*/
+}
+/*-- banner --*/
+
+#banner{
+    background: url(6.jpg );
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.banner-text{
+    text-align: center;
+    color: white;
+    padding-top: 280px;
+}
+.banner-text h3{
+    font-size: 35px;
+    color:whitesmoke;
+    font-style: italic;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 3px;
+}
+/*-- footer bottom ----*/
+#footer{
+    padding: 50px 0 10px;
+    background:url(3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+@media screen and (max-width: 770px){
+    .footer-bottom{
+        flex-basis: 100%;
+    }
+    .contactForm .inputBox{
+        flex-basis: 100%;
+    }
+}
+.social-links{
+    text-align: center;
+}
+.social-links .fa{
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 2px 2px 0;
+    margin-top:auto;
+    cursor: pointer;
+}
